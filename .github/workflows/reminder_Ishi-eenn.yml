@@ -13,13 +13,6 @@ jobs:
         run: echo "DATE=$(date -d '9 hours' +'%Y-%m-%d')" >> $GITHUB_ENV
         env:
           TZ: 'Asia/Tokyo'
-      - name: Create issue by template for shmorish
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          filename: .github/templates/template-shmorish.md
-          search_existing: open
       - name: Create issue by template for Ishi-eenn
         uses: JasonEtco/create-an-issue@v2
         env:
