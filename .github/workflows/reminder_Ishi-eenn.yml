@@ -1,4 +1,4 @@
-name: Create daily work issue
+name: Create daily work issue for Ishi-eenn
 on:
   schedule:
   - cron: '0 22 * * *' # JST 7:00
@@ -18,5 +18,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          filename: .github/templates/template-Ishi-eenn.md
+          filename: .github/templates/Ishi-eenn.md
           search_existing: open
