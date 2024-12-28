@@ -1,4 +1,4 @@
-name: Create daily work issue for shmorish
+name: Create daily work issue
 on:
   schedule:
   - cron: '0 22 * * *' # JST 7:00
@@ -19,4 +19,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           filename: .github/templates/shmorish.md
+          search_existing: open
+      - name: Create issue by template for Ishi-eenn
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/templates/Ishi-eenn.md
           search_existing: open
