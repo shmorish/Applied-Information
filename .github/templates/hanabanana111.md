@@ -1,6 +1,6 @@
 ---
-title: "shmorish {{ env.DATE | date('YYYY') }}年{{ env.DATE | date('MM') }}月{{ env.DATE | date('DD') }}日"
-assignees: 'shmorish'
+title: "hanabanana111 {{ env.DATE | date('YYYY') }}年{{ env.DATE | date('MM') }}月{{ env.DATE | date('DD') }}日"
+assignees: 'hanabanana111'
 labels: 'daily'
 ---
 

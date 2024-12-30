@@ -1,7 +1,7 @@
 name: Create daily work issue
 on:
   schedule:
-  - cron: '0 22 * * *' # JST 7:00
+  - cron: '0 20 * * 0-4' # JST 7:00
   workflow_dispatch:
 jobs:
   createReminderIssue:
@@ -26,4 +26,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           filename: .github/templates/Ishi-eenn.md
+          search_existing: open
+      - name: Create issue by template for hanabanana111
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/templates/hanabanana111.md
           search_existing: open
