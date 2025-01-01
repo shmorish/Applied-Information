@@ -9,3 +9,4 @@ labels: 'daily'
 - [応用情報午後](https://www.ap-siken.com/apkakomon_pm.php)
 - [麻雀](https://game.mahjongsoul.com/index.html)
 - [鉄則](https://atcoder.jp/contests/tessoku-book)
+- [Inception](https://cdn.intra.42.fr/pdf/pdf/147282/en.subject.pdf)
