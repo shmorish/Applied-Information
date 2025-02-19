@@ -34,3 +34,10 @@ jobs:
         with:
           filename: .github/templates/hanabanana111.md
           search_existing: open
+      - name: Create issue by template for kaaaaakun
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/templates/kaaaaakun.md
+          search_existing: open
