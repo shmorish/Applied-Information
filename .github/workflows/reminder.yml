@@ -1,7 +1,7 @@
 name: Create daily work issue
 on:
-  schedule:
-  - cron: '0 20 * * 0-4' # JST 7:00
+  # schedule:
+  # - cron: '0 20 * * 0-4' # JST 7:00
   workflow_dispatch:
 jobs:
   createReminderIssue:
